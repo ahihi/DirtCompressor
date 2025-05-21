@@ -38,3 +38,5 @@ Ndef(\dirtComp, { |amount=1, speed=50|
 Ndef(\dirtComp).set(\amount, 1);
 Ndef(\dirtComp).set(\speed, 200);
 ```
+
+the original Dirt compressor's output can depend on the order of the input channels, which is probably a bug. by default, `DirtCompressor` "fixes" this, but if you want the original behavior, pass `bugCompatible: true`.
