@@ -48,6 +48,6 @@ DirtCompressor {
 				}
 			}
 		);
-		^in * DirtCompressorEnv.ar(envIn, speed);
+		^in * DirtCompressorEnv.ar(envIn, speed) * 0.2;
 	}
 }
